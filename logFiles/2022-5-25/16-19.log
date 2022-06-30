@@ -1,0 +1,46 @@
+/usr/lib/jvm/java-1.17.0-openjdk-amd64/bin/java -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/home/typhoon/下载/idea-IU-221.5591.52/lib/idea_rt.jar=42729:/home/typhoon/下载/idea-IU-221.5591.52/bin -Dfile.encoding=UTF-8 -classpath /home/typhoon/下载/idea-IU-221.5591.52/lib/idea_rt.jar:/home/typhoon/下载/idea-IU-221.5591.52/plugins/junit/lib/junit5-rt.jar:/home/typhoon/下载/idea-IU-221.5591.52/plugins/junit/lib/junit-rt.jar:/home/typhoon/文档/OperatorPriorityAnalyzer/out/test/OperatorPriorityAnalyzer:/home/typhoon/文档/OperatorPriorityAnalyzer/out/production/OperatorPriorityAnalyzer:/home/typhoon/文档/OperatorPriorityAnalyzer/lib/junit-4.13.1.jar:/home/typhoon/文档/OperatorPriorityAnalyzer/lib/hamcrest-core-1.3.jar com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 TestDemo1,test01
+开始文法检测完毕
+[ , #, (, i, ), *, +]
+[#, ≑, ⋖, ⋖,  , ⋖, ⋖]
+[(,  , ⋖, ⋖, ≑, ⋖, ⋖]
+[i, ⋗,  ,  , ⋗, ⋗, ⋗]
+[), ⋗,  ,  , ⋗, ⋗, ⋗]
+[*, ⋗, ⋖, ⋖, ⋗, ⋗, ⋗]
+[+, ⋗, ⋖, ⋖, ⋗, ⋖, ⋗]
+
+currentCharacter = i
+stack = [#, i]
+nextCharacter = +
+当前栈顶元素: #
+判断是否为终结符元素之前的栈中 stack = [#, i]
+Grammar.isVT(s.charAt(0)) = true
+截取后的栈中元素#i
+截取后的当前字符: i
+截取后的下一个字符: #
+优先级大于
+深度1
+s = #
+弹出修改后的 stack = [#, F]
+
+currentCharacter = +
+stack = [#, F, +]
+nextCharacter = i
+当前栈顶元素: #
+判断是否为终结符元素之前的栈中 stack = [#, F, +]
+Grammar.isVT(s.charAt(0)) = true
+s = #
+弹出修改后的 stack = [#, null]
+
+currentCharacter = i
+stack = [#, null, i]
+nextCharacter = *
+当前栈顶元素: #
+判断是否为终结符元素之前的栈中 stack = [#, null, i]
+Grammar.isVT(s.charAt(0)) = true
+截取后的栈中元素#ii
+截取后的当前字符: i
+截取后的下一个字符: i
+截取后的当前字符: i
+截取后的下一个字符: #
+优先级大于
+深度4

@@ -1,0 +1,44 @@
+/usr/lib/jvm/java-1.17.0-openjdk-amd64/bin/java -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/home/typhoon/下载/idea-IU-221.5591.52/lib/idea_rt.jar=33959:/home/typhoon/下载/idea-IU-221.5591.52/bin -Dfile.encoding=UTF-8 -classpath /home/typhoon/下载/idea-IU-221.5591.52/lib/idea_rt.jar:/home/typhoon/下载/idea-IU-221.5591.52/plugins/junit/lib/junit5-rt.jar:/home/typhoon/下载/idea-IU-221.5591.52/plugins/junit/lib/junit-rt.jar:/home/typhoon/文档/OperatorPriorityAnalyzer/out/test/OperatorPriorityAnalyzer:/home/typhoon/文档/OperatorPriorityAnalyzer/out/production/OperatorPriorityAnalyzer:/home/typhoon/文档/OperatorPriorityAnalyzer/lib/junit-4.13.1.jar:/home/typhoon/文档/OperatorPriorityAnalyzer/lib/hamcrest-core-1.3.jar com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 TestDemo1,test01
+开始文法检测完毕
+
+
+[ , #, (, i, ), *, +]
+[#, ≑, ⋖, ⋖,  , ⋖, ⋖]
+[(,  , ⋖, ⋖, ≑, ⋖, ⋖]
+[i, ⋗,  ,  , ⋗, ⋗, ⋗]
+[), ⋗,  ,  , ⋗, ⋗, ⋗]
+[*, ⋗, ⋖, ⋖, ⋗, ⋗, ⋗]
+[+, ⋗, ⋖, ⋖, ⋗, ⋖, ⋗]
+
+
+beforeCharacter = #
+当前栈顶元素i
+nextCharacter = +
+压入元素后的栈中元素[#, i]
+查看准备弹出的元素i
+弹出后的栈中元素[#]
+修改后的栈中元素[#, F]
+
+beforeCharacter = F
+当前栈顶元素+
+nextCharacter = i
+压入元素后的栈中元素[#, F, +]
+
+beforeCharacter = +
+当前栈顶元素i
+nextCharacter = *
+压入元素后的栈中元素[#, F, +, i]
+
+beforeCharacter = i
+当前栈顶元素*
+nextCharacter = i
+压入元素后的栈中元素[#, F, +, i, *]
+
+beforeCharacter = *
+当前栈顶元素i
+nextCharacter = #
+压入元素后的栈中元素[#, F, +, i, *, i]
+
+ 方法结束后的 analyseStack = [#, F, +, i, *, i]
+
+进程已结束,退出代码0

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.typhoon.exception.OperatorGrammarException</OriginalElement>
+  <nodes>
+    <node x="205.50498337606177" y="334.92872472901263">com.typhoon.operator.analyse.OperationAnalyseImpl</node>
+    <node x="1568.2130042116078" y="123.304148492135">com.typhoon.operator.OperationMethod</node>
+    <node x="1445.855447525103" y="-17.582137045642128">com.typhoon.exception.GrammarException</node>
+    <node x="2317.761178260266" y="197.83642171069948">com.typhoon.operator.access.OperationAccess</node>
+    <node x="1727.8086294441591" y="26.872106496025076">com.typhoon.exception.GrammarTextException</node>
+    <node x="1811.8490915152336" y="302.36828983613105">com.typhoon.grammar.operation.GrammarOperation</node>
+    <node x="1581.2706268060047" y="288.9426371367035">TestDemo1</node>
+    <node x="984.6531391942067" y="712.7286863957587">com.typhoon.operator.operation.OperatorOperationImpl</node>
+    <node x="533.4869929096394" y="322.3576650234554">com.typhoon.operator.analyse.OperationAnalyse</node>
+    <node x="2182.0110168217916" y="415.0380108207731">com.typhoon.operator.access.OperationAccessImpl</node>
+    <node x="-214.37962211504737" y="495.3607655137365">com.typhoon.operator.operation.OperatorOperation</node>
+    <node x="1922.6067169722614" y="206.02362656809814">com.typhoon.exception.GrammarTextLengthException</node>
+    <node x="1139.8728315542958" y="474.0269579615514">com.typhoon.operator.operation.PriorityRelationship.OperatorOperationPriorityRelationship</node>
+    <node x="361.0793253789666" y="534.6124595032845">com.typhoon.exception.OperatorGrammarTextException</node>
+    <node x="952.0541627331418" y="141.51026755956553">com.typhoon.grammar.Grammar</node>
+    <node x="486.23034322203455" y="660.0241936138511">com.typhoon.operator.operation.PriorityRelationship.OperatorOperationPriorityRelationshipImpl</node>
+    <node x="1723.7212180246033" y="518.6689458571645">com.typhoon.grammar.operation.GrammarOperationImpl</node>
+    <node x="769.3186770535881" y="563.1309256342246">com.typhoon.exception.OperatorGrammarException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.typhoon.operator.operation.OperatorOperationImpl" target="com.typhoon.operator.operation.OperatorOperation" relationship="REALIZATION">
+      <point x="-256.0" y="42.29550721809244" />
+      <point x="41.62037788495263" y="803.5241936138511" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.typhoon.operator.operation.PriorityRelationship.OperatorOperationPriorityRelationshipImpl" target="com.typhoon.operator.operation.PriorityRelationship.OperatorOperationPriorityRelationship" relationship="REALIZATION">
+      <point x="216.0" y="-56.855247756686595" />
+      <point x="1340.8728315542958" y="666.1689458571645" />
+      <point x="0.0" y="63.0" />
+    </edge>
+    <edge source="TestDemo1" target="com.typhoon.operator.OperationMethod" relationship="GENERALIZATION">
+      <point x="3.7319399530133524E-4" y="34.00036286329646" />
+      <point x="1656.271" y="444.0" />
+      <point x="1748.771" y="444.0" />
+      <point x="45.05799578839219" y="33.999851507865" />
+    </edge>
+    <edge source="com.typhoon.grammar.operation.GrammarOperationImpl" target="com.typhoon.grammar.operation.GrammarOperation" relationship="REALIZATION">
+      <point x="88.12787349063024" y="-77.5" />
+      <point x="0.0" y="77.5" />
+    </edge>
+    <edge source="com.typhoon.operator.analyse.OperationAnalyseImpl" target="com.typhoon.operator.OperationMethod" relationship="GENERALIZATION">
+      <point x="1.6623938222437573E-5" y="34.000275270987345" />
+      <point x="335.005" y="444.0" />
+      <point x="1748.771" y="444.0" />
+      <point x="45.05799578839219" y="33.999851507865" />
+    </edge>
+    <edge source="com.typhoon.exception.OperatorGrammarTextException" target="com.typhoon.exception.OperatorGrammarException" relationship="GENERALIZATION">
+      <point x="0.0" y="18.0" />
+      <point x="528.5793253789666" y="588.1124595032845" />
+      <point x="-149.0" y="6.981533869059945" />
+    </edge>
+    <edge source="com.typhoon.operator.analyse.OperationAnalyseImpl" target="com.typhoon.operator.analyse.OperationAnalyse" relationship="REALIZATION">
+      <point x="129.5" y="-12.571059705557218" />
+      <point x="-129.5" y="0.0" />
+    </edge>
+    <edge source="com.typhoon.operator.access.OperationAccessImpl" target="com.typhoon.operator.OperationMethod" relationship="GENERALIZATION">
+      <point x="-218.50001682179163" y="-1.0820773070463474E-5" />
+      <point x="1559.373" y="493.038" />
+      <point x="1559.373" y="444.0" />
+      <point x="1748.771" y="444.0" />
+      <point x="45.05799578839219" y="33.999851507865" />
+    </edge>
+    <edge source="com.typhoon.grammar.Grammar" target="com.typhoon.operator.OperationMethod" relationship="GENERALIZATION">
+      <point x="-1.6273314167847275E-4" y="135.49973244043446" />
+      <point x="1215.054" y="444.0" />
+      <point x="1748.771" y="444.0" />
+      <point x="45.05799578839219" y="33.999851507865" />
+    </edge>
+    <edge source="com.typhoon.exception.OperatorGrammarException" target="com.typhoon.exception.GrammarException" relationship="GENERALIZATION">
+      <point x="3.2294641187036177E-4" y="-17.99992563422461" />
+      <point x="918.319" y="94.0" />
+      <point x="1556.355" y="94.0" />
+      <point x="-4.4752510302714654E-4" y="34.00013704564213" />
+    </edge>
+    <edge source="com.typhoon.exception.GrammarTextException" target="com.typhoon.exception.GrammarException" relationship="GENERALIZATION">
+      <point x="3.705558408455545E-4" y="17.999893503974924" />
+      <point x="1855.809" y="94.0" />
+      <point x="1556.355" y="94.0" />
+      <point x="-4.4752510302714654E-4" y="34.00013704564213" />
+    </edge>
+    <edge source="com.typhoon.operator.access.OperationAccessImpl" target="com.typhoon.operator.access.OperationAccess" relationship="REALIZATION">
+      <point x="135.7501614384746" y="-78.0" />
+      <point x="0.0" y="78.0" />
+    </edge>
+    <edge source="com.typhoon.exception.GrammarTextLengthException" target="com.typhoon.exception.GrammarException" relationship="GENERALIZATION">
+      <point x="2.8302773853283725E-4" y="-17.999626568098137" />
+      <point x="2080.607" y="94.0" />
+      <point x="1556.355" y="94.0" />
+      <point x="-4.4752510302714654E-4" y="34.00013704564213" />
+    </edge>
+  </edges>
+  <settings layout="分层" zoom="0.41471571906354515" showDependencies="true" x="1270.0" y="396.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>内部类</Category>
+    <Category>属性</Category>
+    <Category>方法</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
